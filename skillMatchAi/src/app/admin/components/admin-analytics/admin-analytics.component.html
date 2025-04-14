@@ -1,0 +1,53 @@
+<div class="analytics-container">
+    <div class="page-header">
+      <h1>Analytics Dashboard</h1>
+    </div>
+
+    <div class="stats-container">
+      <div class="stat-card" *ngFor="let stat of statCards">
+        <div class="stat-title">{{ stat.title }}</div>
+        <div class="stat-value">{{ stat.value }}</div>
+      </div>
+    </div>
+
+    <div class="content-sections">
+      <div class="section jobs-growth">
+        <div class="section-header">
+          <h2>Jobs Growth</h2>
+          <div class="time-filter">
+            <span [class.active]="activeTimeFilter === 'Week'" (click)="setTimeFilter('Week')">Week</span>
+            <span [class.active]="activeTimeFilter === 'Month'" (click)="setTimeFilter('Month')">Month</span>
+            <span [class.active]="activeTimeFilter === 'Year'" (click)="setTimeFilter('Year')">Year</span>
+          </div>
+        </div>
+
+        <div class="chart-container">
+          <div class="chart">
+            <div class="chart-bars">
+              <div *ngFor="let point of jobsGrowthData" class="chart-bar">
+                <div class="bar" [style.height]="(point.value / maxChartValue * 100) + '%'"></div>
+                <div class="bar-label">{{ point.label }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section skills-demand">
+        <h2>Top Skills in Demand</h2>
+        
+        <div class="skills-list">
+          <div *ngFor="let skill of topSkills" class="skill-item">
+            <div class="skill-info">
+              <div class="skill-name">{{ skill.name }}</div>
+              <div class="skill-count">{{ skill.count }}</div>
+            </div>
+            <div class="skill-bar-container">
+              <div class="skill-bar" [style.width]="skill.percentage + '%'"></div>
+              <div class="skill-bar-bg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,64 @@
+<div class="users-container">
+    <div class="page-header">
+      <h1>Users</h1>
+      <div class="header-actions">
+        <div class="notification-icon">
+          <span class="notification-dot"></span>
+          <i class="fa fa-bell"></i>
+        </div>
+        <div class="user-avatar">
+          <span>80 × 80</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-container">
+      <div class="stat-card">
+        <div class="stat-title">Total Users</div>
+        <div class="stat-value">2,489</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-title">Active Skills</div>
+        <div class="stat-value">342</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-title">Open Jobs</div>
+        <div class="stat-value">156</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-title">Companies</div>
+        <div class="stat-value">89</div>
+      </div>
+    </div>
+
+    <div class="content-sections">
+      <div class="section recent-activity">
+        <h2>Recent Activity</h2>
+        <div class="activity-list">
+          <div class="activity-item" *ngFor="let item of recentActivities">
+            <div class="activity-icon" [ngClass]="item.type">
+              <i class="fa {{ item.icon }}"></i>
+            </div>
+            <div class="activity-details">
+              <div class="activity-text">{{ item.action }}</div>
+              <div class="activity-time">{{ item.time }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section user-growth">
+        <h2>User Growth</h2>
+        <div class="chart-container">
+          <div class="chart">
+            <div class="chart-bars">
+              <div *ngFor="let month of userGrowthData" class="chart-bar">
+                <div class="bar" [style.height]="(month.value / maxValue * 100) + '%'"></div>
+                <div class="month-label">{{ month.month }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

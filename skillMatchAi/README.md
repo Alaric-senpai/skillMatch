@@ -1,59 +1,69 @@
 # SkillMatchAi
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
+AI-powered skills matching platform connecting job seekers with opportunities. Built with Angular to provide a modern, responsive web experience.
 
-## Development server
+## Project Overview
 
-To start a local development server, run:
+SkillMatchAi is an innovative platform that bridges the gap between talent and opportunity using advanced AI algorithms. Our system:
+- Analyzes job seeker profiles and skill sets with precision
+- Creates intelligent matches with job opportunities
+- Provides data-driven career development paths
+- Offers real-time skill matching analytics
+- Helps employers find the perfect candidates
 
+## Key Features
+✨ **For Job Seekers**
+- AI-powered skills assessment
+- Personalized job recommendations
+- Interactive career progression dashboard
+- Skill gap analysis with learning recommendations
+- Resume optimization suggestions
+
+✨ **For Employers**
+- Smart candidate matching
+- Skill-based talent search
+- Automated screening process
+- Candidate pipeline analytics
+- Team skill composition insights
+
+## Technical Stack
+### Frontend
+- Angular 19.2
+- TypeScript
+- RxJS
+- Angular Material
+- SCSS
+
+### Backend
+- Node.js
+- Express.js
+- TensorFlow.js
+- OpenAI API
+- JWT Authentication
+
+### Database & Storage
+- Firebase Realtime Database
+- Cloud Storage
+- Redis Cache
+
+### DevOps & Deployment
+- Docker
+- GitHub Actions
+- Azure Cloud Services
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v18 or higher)
+- npm (v9 or higher)
+- Angular CLI (v19.2.3)
+- Firebase account
+- OpenAI API key
+
+### Installation
+
+1. Clone the repository
 ```bash
-ng serve
+git clone https://github.com/alaric/skillMatch.git
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

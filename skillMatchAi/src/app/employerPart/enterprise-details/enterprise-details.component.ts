@@ -1,4 +1,5 @@
 // enterprise-details.component.ts
+import { NgClass } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators,FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -7,7 +8,7 @@ import { Router } from '@angular/router';
   selector: 'app-enterprise-details',
   templateUrl: './enterprise-details.component.html',
   styleUrls: ['./enterprise-details.component.css'],
-  imports: [FormsModule, ReactiveFormsModule],
+  imports: [FormsModule, ReactiveFormsModule, NgClass],
   standalone: true
 })
 export class EnterpriseDetailsComponent implements OnInit {

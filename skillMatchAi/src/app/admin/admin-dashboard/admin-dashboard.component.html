@@ -1,0 +1,32 @@
+<div class="dashboard-container">
+    <div class="dashboard-header">
+      <h1>Dashboard Overview</h1>
+      <div class="actions">
+        <button class="generate-report-btn">
+          <span class="plus-icon">+</span>
+          Generate Report
+        </button>
+        <div class="notification-icon">
+          <span class="notification-dot"></span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="#333">
+            <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"/>
+          </svg>
+        </div>
+        <div class="user-avatar">
+          <span>80 × 80</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="stats-container">
+      <app-stat-card title="Total Users" value="2,489" change="12" changeType="increase"></app-stat-card>
+      <app-stat-card title="Active Users" value="1,823" change="8" changeType="increase"></app-stat-card>
+      <app-stat-card title="Job Success Rate" value="78%" change="5" changeType="increase"></app-stat-card>
+      <app-stat-card title="Revenue" value="$156,340" change="15" changeType="increase"></app-stat-card>
+    </div>
+    
+    <div class="dashboard-sections">
+      <app-matches-list></app-matches-list>
+      <app-skills-list></app-skills-list>
+    </div>
+  </div>

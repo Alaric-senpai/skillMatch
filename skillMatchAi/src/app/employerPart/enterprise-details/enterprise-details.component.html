@@ -75,7 +75,7 @@
                 id="industry" 
                 formControlName="industry" 
                 class="form-control"
-                [ngClass]="{'invalid': enterpriseForm.get('industry').touched && enterpriseForm.get('industry').invalid}"
+                [ngClass]="{'invalid': enterpriseForm.get('industry')?.touched && enterpriseForm.get('industry')?.invalid}"
               >
             </div>
   
@@ -98,7 +98,7 @@
                 id="companySize" 
                 formControlName="companySize" 
                 class="form-control"
-                [ngClass]="{'invalid': enterpriseForm.get('companySize').touched && enterpriseForm.get('companySize').invalid}"
+                [ngClass]="{'invalid': enterpriseForm.get('companySize')?.touched && enterpriseForm.get('companySize')?.invalid}"
               >
             </div>
   
@@ -121,7 +121,7 @@
                 id="jobTitle" 
                 formControlName="jobTitle" 
                 class="form-control"
-                [ngClass]="{'invalid': enterpriseForm.get('jobTitle').touched && enterpriseForm.get('jobTitle').invalid}"
+                [ngClass]="{'invalid': enterpriseForm.get('jobTitle')?.touched && enterpriseForm.get('jobTitle')?.invalid}"
               >
             </div>
   
